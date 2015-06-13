@@ -14,10 +14,14 @@
 \def\@baseclass{report}
 \def\@rodzajpracy{dyplomowa}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{\@baseclass}}
-\PassOptionsToClass{a4paper,twoside,openright,11pt}{\@baseclass}
+\PassOptionsToClass{a4paper,twoside,openright,12pt}{\@baseclass}
 \ProcessOptions
 
 \LoadClass{\@baseclass}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
 
 \textwidth\paperwidth
 \advance\textwidth -55mm
@@ -36,22 +40,31 @@
     \let\footnotesize\small
     \let\footnoterule\relax
     \let \footnote \thanks
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=north east,inner sep=0pt] at ($(current page.north east)$) {
+        \includegraphics{img/alk}
+      };
+    \end{tikzpicture}
     \begin{center}%
-      {\LARGE\textbf{Akademia Leona Koźmińskiego}\par}
+      {\LARGE\textbf{Centrum Doradztwa i Kształcenia Menedżerów Center of Excellence}\par}
+      \vspace{0.5cm}
+      {\Large\textbf{Coaching profesjonalny - metody i praktyka edycja XII.}\par}
       \vspace{1cm plus 1fill}
-      {\Large\bf\@author\par}
+      {\Large\bf Praca końcowa:\par}
       \vspace{0.2cm}
       \vspace{8mm plus .1fill}
       {\Huge\textbf{\@title}\par}
       \vspace{8mm plus .1fill}
-      {\large\bf Praca \@rodzajpracy\\[3pt]
-        na kierunku \MakeUppercase{\@kierunek} \\
-        \par}
+      {\Large Autor:\par}
+      \vspace{0.2cm}
+      {\Large\bf\@author\par}
+      \vspace{2cm}
+      { \hfill Praca pisana pod kierunkiem: }
       \vspace{2cm plus 1.5fill}
       \begin{flushright}\large
       \end{flushright}
       \vspace{1cm plus 1fill}
-      {\large \@date\par}
+      {\large Warszawa, \@date\par}
     \end{center}
     \@thanks
   \end{titlepage}%
