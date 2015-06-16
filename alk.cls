@@ -48,7 +48,7 @@
     \begin{center}%
       {\LARGE\textbf{Centrum Doradztwa i Kształcenia Menedżerów Center of Excellence}\par}
       \vspace{0.5cm}
-      {\Large\textbf{Coaching profesjonalny - metody i praktyka edycja XII.}\par}
+      {\Large\textbf{Coaching profesjonalny - metody i praktyka edycja XII}\par}
       \vspace{1cm plus 1fill}
       {\Large\bf Praca końcowa:\par}
       \vspace{0.2cm}
