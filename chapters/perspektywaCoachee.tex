@@ -5,6 +5,35 @@
 % Jakie korzysci proces coachingowy przyniosl mi, na jakich poziomach piramidy Diltsa obserwuje zachodzace zmiany?
 % Co ma dla mnie najwieksze znaczenie/ jest dla mnie najwieksza wartoscia z zaangazowania sie we wlasny proces coachingowy?
 
+W tym rozdziale autor pracy omówi korzyści i zmiany pojawiające się w jego życiu z perspektywy osoby coachowanej.
+
+\begin{figure}[htp]
+\centering
+\begin{tikzpicture}
+\coordinate (A) at (-7,0) {};
+\coordinate (B) at ( 7,0) {};
+\coordinate (C) at (0,10) {};
+\draw[name path=AC] (A) -- (C);
+\draw[name path=BC] (B) -- (C);
+\foreach \y/\A in {
+0/Środowisko,
+1/Zachowania,
+2/Umiejętności,
+3/Stany i samopoczucie,
+4/Przekonania,
+5/Wartości,
+6/Tożsamość,
+7/Misja ,
+8/Duchowość} {
+    \path[name path=horiz] (A|-0,\y) -- (B|-0,\y);
+    \draw[name intersections={of=AC and horiz,by=P},
+          name intersections={of=BC and horiz,by=Q}] (P) -- (Q)
+          node[midway,above,align=center,text width=\dimexpr(12em-\y em)*3\relax] {\A};
+}
+\end{tikzpicture}
+\caption{Poziomy neurologiczne opisane przez Roberta Diltsa i przedstawione w formie piramidy. \cite{dilts}}
+\end{figure}
+
 \begin{enumerate}
   \item Zmiana na poziomie zachowań: skuteczniejsza komunikacja w zespole. Wykorzystanie dobrych pytań. Dostosowanie
       metod komunikacji i zadań do predyspozycji rozmówcy.
