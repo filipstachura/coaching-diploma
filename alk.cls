@@ -59,7 +59,7 @@
       \vspace{0.2cm}
       {\Large\bf\@author\par}
       \vspace{2cm}
-      { \hfill Praca pisana pod kierunkiem: }
+      { \hfill  }
       \vspace{2cm plus 1.5fill}
       \begin{flushright}\large
       \end{flushright}
